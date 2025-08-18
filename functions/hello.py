@@ -5,6 +5,6 @@ def handler(event, context):
 
 if __name__ == "__main__":
     event = json.load(sys.stdin)
-    ctx = {}  # context injection later
+    ctx = {}
     result = handler(event, ctx)
     print(json.dumps(result))
